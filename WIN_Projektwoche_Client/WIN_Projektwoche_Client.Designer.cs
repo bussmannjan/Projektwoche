@@ -84,7 +84,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(339, 261);
+            this.ClientSize = new System.Drawing.Size(339, 60);
             this.Controls.Add(this.lblPort);
             this.Controls.Add(this.lblIPAddresse);
             this.Controls.Add(this.tboxPort);
