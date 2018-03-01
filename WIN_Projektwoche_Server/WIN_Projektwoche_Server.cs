@@ -90,5 +90,25 @@ namespace WIN_Projektwoche
             Server.PacketReceived += new AsyncTcpServer.PacketReceivedEventHandler(Packet_Recieved);
             _timer.Change(0, 500);
         }
+
+        private void lblIPAddresse_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tboxPort_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cboxIPAdresse_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblPort_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

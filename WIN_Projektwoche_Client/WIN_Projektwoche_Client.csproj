@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AsyncTcpClient.cs" />
+    <Compile Include="AsyncTcpServer.cs" />
+    <Compile Include="Client.cs" />
+    <Compile Include="ClientConnectedEventArgs.cs" />
+    <Compile Include="ClientDisconnectedEventArgs.cs" />
+    <Compile Include="PacketReceivedEventArgs.cs" />
     <Compile Include="WIN_Projektwoche_Client.cs">
       <SubType>Form</SubType>
     </Compile>

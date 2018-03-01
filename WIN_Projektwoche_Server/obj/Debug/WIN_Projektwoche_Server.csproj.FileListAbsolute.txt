@@ -8,3 +8,13 @@ C:\Users\Jan Bußmann\Documents\GitHub\WIN_Projektwoche\WIN_Projektwoche_Server\
 C:\Users\Jan Bußmann\Documents\GitHub\WIN_Projektwoche\WIN_Projektwoche_Server\obj\Debug\WIN_Projektwoche_Server.csproj.CoreCompileInputs.cache
 C:\Users\Jan Bußmann\Documents\GitHub\WIN_Projektwoche\WIN_Projektwoche_Server\obj\Debug\WIN_Projektwoche_Server.exe
 C:\Users\Jan Bußmann\Documents\GitHub\WIN_Projektwoche\WIN_Projektwoche_Server\obj\Debug\WIN_Projektwoche_Server.pdb
+C:\Users\Jan Bußmann\Documents\GitHub\WIN_Projektwoche\Projektwoche\WIN_Projektwoche_Server\bin\Debug\WIN_Projektwoche_Server.exe.config
+C:\Users\Jan Bußmann\Documents\GitHub\WIN_Projektwoche\Projektwoche\WIN_Projektwoche_Server\bin\Debug\WIN_Projektwoche_Server.exe
+C:\Users\Jan Bußmann\Documents\GitHub\WIN_Projektwoche\Projektwoche\WIN_Projektwoche_Server\bin\Debug\WIN_Projektwoche_Server.pdb
+C:\Users\Jan Bußmann\Documents\GitHub\WIN_Projektwoche\Projektwoche\WIN_Projektwoche_Server\obj\Debug\WIN_Projektwoche_Server.csprojResolveAssemblyReference.cache
+C:\Users\Jan Bußmann\Documents\GitHub\WIN_Projektwoche\Projektwoche\WIN_Projektwoche_Server\obj\Debug\WIN_Projektwoche_Server.Properties.Resources.resources
+C:\Users\Jan Bußmann\Documents\GitHub\WIN_Projektwoche\Projektwoche\WIN_Projektwoche_Server\obj\Debug\WIN_Projektwoche.WIN_Projektwoche_Server.resources
+C:\Users\Jan Bußmann\Documents\GitHub\WIN_Projektwoche\Projektwoche\WIN_Projektwoche_Server\obj\Debug\WIN_Projektwoche_Server.csproj.GenerateResource.Cache
+C:\Users\Jan Bußmann\Documents\GitHub\WIN_Projektwoche\Projektwoche\WIN_Projektwoche_Server\obj\Debug\WIN_Projektwoche_Server.csproj.CoreCompileInputs.cache
+C:\Users\Jan Bußmann\Documents\GitHub\WIN_Projektwoche\Projektwoche\WIN_Projektwoche_Server\obj\Debug\WIN_Projektwoche_Server.exe
+C:\Users\Jan Bußmann\Documents\GitHub\WIN_Projektwoche\Projektwoche\WIN_Projektwoche_Server\obj\Debug\WIN_Projektwoche_Server.pdb
