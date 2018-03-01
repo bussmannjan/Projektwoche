@@ -60,9 +60,15 @@ namespace WIN_Projektwoche
         private void btnStart_Click(object sender, EventArgs e)
         {
             Client.Connect(IPAddress.Parse(cboxIPAdresse.Text), Convert.ToInt32(tboxPort.Text));
-            btnStart.Enabled = false;
-            cboxIPAdresse.Enabled = false;
-            tboxPort.Enabled = false;
+            System.Threading.Thread.Sleep(250);
+            if (Client.IsConnected)
+            {
+                btnStart.Enabled = false;
+                cboxIPAdresse.Enabled = false;
+                tboxPort.Enabled = false;
+            }
+            else MessageBox.Show("Verbindung fehlgeschlagen!");
+            
         }
     }
 }
