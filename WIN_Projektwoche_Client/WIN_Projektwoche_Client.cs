@@ -17,6 +17,8 @@ namespace WIN_Projektwoche
     public partial class WIN_Projektwoche_Client : Form
     {
         AsyncTcpClient Client = new AsyncTcpClient();
+        string Nutzername = "Admin";
+        string Passwort = "Passwort";
 
         public WIN_Projektwoche_Client()
         {
@@ -59,16 +61,27 @@ namespace WIN_Projektwoche
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-            Client.Connect(IPAddress.Parse(cboxIPAdresse.Text), Convert.ToInt32(tboxPort.Text));
-            System.Threading.Thread.Sleep(250);
-            if (Client.IsConnected)
-            {
-                btnStart.Enabled = false;
-                cboxIPAdresse.Enabled = false;
-                tboxPort.Enabled = false;
-            }
-            else MessageBox.Show("Verbindung fehlgeschlagen!");
             
+            if ((tboxUsername.Text == Nutzername) && (tboxPasswort.Text == Passwort))
+            {
+                Client.Connect(IPAddress.Parse(cboxIPAdresse.Text), Convert.ToInt32(tboxPort.Text));
+                System.Threading.Thread.Sleep(250);
+                if (Client.IsConnected)
+                {
+                    LoginErfolgreich();
+                }
+                else  MessageBox.Show("Verbindung fehlgeschlagen!");
+            }
+
+            else MessageBox.Show("Benutzername oder Passwort falsch!");
+            
+        }
+
+        private void LoginErfolgreich()
+        {
+            WIN_Projektwoche_Client.ActiveForm.Hide();
+            WIN_Projektwoche_Client_Statusübersicht WIN_Projektwoche_Client_Statusübersicht1 = new WIN_Projektwoche_Client_Statusübersicht();
+            WIN_Projektwoche_Client_Statusübersicht1.Show();  
         }
     }
 }

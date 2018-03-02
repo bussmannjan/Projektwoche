@@ -59,6 +59,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WIN_Projektwoche_Client_Statusübersicht.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WIN_Projektwoche_Client_Statusübersicht.Designer.cs">
+      <DependentUpon>WIN_Projektwoche_Client_Statusübersicht.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="WIN_Projektwoche_Client.resx">
       <DependentUpon>WIN_Projektwoche_Client.cs</DependentUpon>
     </EmbeddedResource>
@@ -71,6 +77,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="WIN_Projektwoche_Client_Statusübersicht.resx">
+      <DependentUpon>WIN_Projektwoche_Client_Statusübersicht.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -8,3 +8,4 @@ C:\Users\Jan Bußmann\Documents\GitHub\WIN_Projektwoche\Projektwoche\WIN_Projekt
 C:\Users\Jan Bußmann\Documents\GitHub\WIN_Projektwoche\Projektwoche\WIN_Projektwoche_Client\obj\Debug\WIN_Projektwoche_Client.csproj.CoreCompileInputs.cache
 C:\Users\Jan Bußmann\Documents\GitHub\WIN_Projektwoche\Projektwoche\WIN_Projektwoche_Client\obj\Debug\WIN_Projektwoche_Client.exe
 C:\Users\Jan Bußmann\Documents\GitHub\WIN_Projektwoche\Projektwoche\WIN_Projektwoche_Client\obj\Debug\WIN_Projektwoche_Client.pdb
+C:\Users\Jan Bußmann\Documents\GitHub\WIN_Projektwoche\Projektwoche\WIN_Projektwoche_Client\obj\Debug\WIN_Projektwoche.WIN_Projektwoche_Client_Statusübersicht.resources

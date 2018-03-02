@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WIN_Projektwoche_Server));
             this.lboxLog = new System.Windows.Forms.ListBox();
             this.lboxConnectedClients = new System.Windows.Forms.ListBox();
             this.btnStart = new System.Windows.Forms.Button();
@@ -44,6 +45,7 @@
             // 
             // lboxLog
             // 
+            this.lboxLog.BackColor = System.Drawing.Color.LightGray;
             this.lboxLog.FormattingEnabled = true;
             this.lboxLog.Location = new System.Drawing.Point(12, 2);
             this.lboxLog.Name = "lboxLog";
@@ -52,6 +54,7 @@
             // 
             // lboxConnectedClients
             // 
+            this.lboxConnectedClients.BackColor = System.Drawing.Color.LightGray;
             this.lboxConnectedClients.FormattingEnabled = true;
             this.lboxConnectedClients.Location = new System.Drawing.Point(419, 87);
             this.lboxConnectedClients.Name = "lboxConnectedClients";
@@ -60,16 +63,18 @@
             // 
             // btnStart
             // 
+            this.btnStart.BackColor = System.Drawing.Color.LightGray;
             this.btnStart.Location = new System.Drawing.Point(652, 33);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(75, 23);
             this.btnStart.TabIndex = 2;
             this.btnStart.Text = "Start";
-            this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.UseVisualStyleBackColor = false;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // cboxIPAdresse
             // 
+            this.cboxIPAdresse.BackColor = System.Drawing.Color.LightGray;
             this.cboxIPAdresse.FormattingEnabled = true;
             this.cboxIPAdresse.Location = new System.Drawing.Point(419, 35);
             this.cboxIPAdresse.Name = "cboxIPAdresse";
@@ -80,6 +85,7 @@
             // 
             // tboxPort
             // 
+            this.tboxPort.BackColor = System.Drawing.Color.LightGray;
             this.tboxPort.Location = new System.Drawing.Point(546, 36);
             this.tboxPort.Name = "tboxPort";
             this.tboxPort.Size = new System.Drawing.Size(100, 20);
@@ -156,6 +162,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkGray;
             this.ClientSize = new System.Drawing.Size(740, 346);
             this.Controls.Add(this.lblVerbundeneClientsText);
             this.Controls.Add(this.lblPort);
@@ -169,6 +176,7 @@
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.lboxConnectedClients);
             this.Controls.Add(this.lboxLog);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(756, 385);
             this.MinimumSize = new System.Drawing.Size(756, 385);
