@@ -19,6 +19,7 @@ namespace WIN_Projektwoche
     {
         AsyncTcpServer Server;
         private System.Threading.Timer _timer;
+        Systemvalues SystemWerte = new Systemvalues();
 
         public WIN_Projektwoche_Server()
         {
@@ -43,6 +44,106 @@ namespace WIN_Projektwoche
                 if (Server.IsActive)
                 {
                     lblServerstatusAusgabe.Text = "online";
+                    try
+                    {
+                        lblCPUAuslastungAusgabe.Text = string.Format("{0}%", SystemWerte.get_CPU_Load()) ;
+                    }
+                    catch (Exception)
+                    {
+
+                        lblCPUAuslastungAusgabe.Text = "Service nicht verfügbar!";
+                    }
+                    try
+                    {
+                        lblSchreibauslastungAusgabe.Text = string.Format("{0}%", SystemWerte.get_Diskwrite_load()) ;
+                    }
+                    catch (Exception)
+                    {
+
+                        lblSchreibauslastungAusgabe.Text = "Service nicht verfügbar!";
+                    }
+                    try
+                    {
+                        lblLeseauslastungAusgabe.Text = string.Format("{0}%", SystemWerte.get_Diskread_load()) ;
+                    }
+                    catch (Exception)
+                    {
+
+                        lblLeseauslastungAusgabe.Text = "Service nicht verfügbar!";
+                    }
+                    try
+                    {
+                        lblRAMAuslastungAusgabe.Text = string.Format("{0}%", SystemWerte.get_RAM_load());
+                    }
+                    catch (Exception)
+                    {
+
+                        lblRAMAuslastungAusgabe.Text = "Service nicht verfügbar!";
+                    }
+                    try
+                    {
+                        lblServerLaufzeitAusgabe.Text = SystemWerte.get_Uptime();
+                    }
+                    catch (Exception)
+                    {
+
+                        lblServerLaufzeitAusgabe.Text = "Service nicht verfügbar!";
+                    }
+                    try
+                    {
+                        lblAnzahlProzzessorenAusgabe.Text = SystemWerte.GetCPUProcessor();
+                    }
+                    catch (Exception)
+                    {
+
+                        lblAnzahlProzzessorenAusgabe.Text = "Service nicht verfügbar!";
+                    }
+                    try
+                    {
+                        lblCPUSpeedAusgabe.Text = string.Format("{0}MHz", SystemWerte.GetCPUMaxSpeed()) ;
+                    }
+                    catch (Exception)
+                    {
+
+                        lblCPUSpeedAusgabe.Text = "Service nicht verfügbar!";
+                    }
+                    try
+                    {
+                        lblAnzahlKerneAusgabe.Text = SystemWerte.GetCPUCores();
+                    }
+                    catch (Exception)
+                    {
+
+                        lblAnzahlKerneAusgabe.Text = "Service nicht verfügbar!";
+                    }
+                    try
+                    {
+                        lblAnzahlThreadsAusgabe.Text = SystemWerte.GetThreads();
+                    }
+                    catch (Exception)
+                    {
+
+                        lblAnzahlThreadsAusgabe.Text = "Service nicht verfügbar!";
+                    }
+                    try
+                    {
+                        lblCPUTemperaturAusgabe.Text = string.Format("{0}C°", SystemWerte.GetCPUTemp()) ;
+                    }
+                    catch (Exception)
+                    {
+
+                        lblCPUTemperaturAusgabe.Text = "Service nicht verfügbar!";
+                    }
+                    try
+                    {
+                        //lblNetzwerkgeschwindigkeitAusgabe.Text = SystemWerte.ShowNetworkTraffic();
+                        throw new NotImplementedException();
+                    }
+                    catch (Exception)
+                    {
+
+                        lblNetzwerkgeschwindigkeitAusgabe.Text = "Service nicht verfügbar!";
+                    } 
                 }
                 else { lblServerstatusAusgabe.Text = "offline"; }
                 lblAnzahlClentsAusgabe.Text = Convert.ToString(Server.NumberOfConnectedClients) ;
@@ -89,26 +190,6 @@ namespace WIN_Projektwoche
             Server.ClientDisconnected += new AsyncTcpServer.ClientDisconnectedEventHandler(Disconnected);
             Server.PacketReceived += new AsyncTcpServer.PacketReceivedEventHandler(Packet_Recieved);
             _timer.Change(0, 500);
-        }
-
-        private void lblIPAddresse_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tboxPort_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cboxIPAdresse_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblPort_Click(object sender, EventArgs e)
-        {
-
-        }
+        }  
     }
 }
