@@ -39,6 +39,7 @@
             this.lblAnzahlClentsAusgabe = new System.Windows.Forms.Label();
             this.lblIPAddresse = new System.Windows.Forms.Label();
             this.lblPort = new System.Windows.Forms.Label();
+            this.lblVerbundeneClientsText = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lboxLog
@@ -46,20 +47,20 @@
             this.lboxLog.FormattingEnabled = true;
             this.lboxLog.Location = new System.Drawing.Point(12, 2);
             this.lboxLog.Name = "lboxLog";
-            this.lboxLog.Size = new System.Drawing.Size(284, 342);
+            this.lboxLog.Size = new System.Drawing.Size(386, 342);
             this.lboxLog.TabIndex = 0;
             // 
             // lboxConnectedClients
             // 
             this.lboxConnectedClients.FormattingEnabled = true;
-            this.lboxConnectedClients.Location = new System.Drawing.Point(303, 87);
+            this.lboxConnectedClients.Location = new System.Drawing.Point(419, 87);
             this.lboxConnectedClients.Name = "lboxConnectedClients";
             this.lboxConnectedClients.Size = new System.Drawing.Size(308, 95);
             this.lboxConnectedClients.TabIndex = 1;
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(536, 33);
+            this.btnStart.Location = new System.Drawing.Point(652, 33);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(75, 23);
             this.btnStart.TabIndex = 2;
@@ -70,7 +71,7 @@
             // cboxIPAdresse
             // 
             this.cboxIPAdresse.FormattingEnabled = true;
-            this.cboxIPAdresse.Location = new System.Drawing.Point(303, 35);
+            this.cboxIPAdresse.Location = new System.Drawing.Point(419, 35);
             this.cboxIPAdresse.Name = "cboxIPAdresse";
             this.cboxIPAdresse.Size = new System.Drawing.Size(121, 21);
             this.cboxIPAdresse.TabIndex = 3;
@@ -79,7 +80,7 @@
             // 
             // tboxPort
             // 
-            this.tboxPort.Location = new System.Drawing.Point(430, 36);
+            this.tboxPort.Location = new System.Drawing.Point(546, 36);
             this.tboxPort.Name = "tboxPort";
             this.tboxPort.Size = new System.Drawing.Size(100, 20);
             this.tboxPort.TabIndex = 4;
@@ -89,7 +90,7 @@
             // lblServerstatusText
             // 
             this.lblServerstatusText.AutoSize = true;
-            this.lblServerstatusText.Location = new System.Drawing.Point(303, 204);
+            this.lblServerstatusText.Location = new System.Drawing.Point(419, 204);
             this.lblServerstatusText.Name = "lblServerstatusText";
             this.lblServerstatusText.Size = new System.Drawing.Size(69, 13);
             this.lblServerstatusText.TabIndex = 5;
@@ -98,7 +99,7 @@
             // lblServerstatusAusgabe
             // 
             this.lblServerstatusAusgabe.AutoSize = true;
-            this.lblServerstatusAusgabe.Location = new System.Drawing.Point(427, 204);
+            this.lblServerstatusAusgabe.Location = new System.Drawing.Point(543, 204);
             this.lblServerstatusAusgabe.Name = "lblServerstatusAusgabe";
             this.lblServerstatusAusgabe.Size = new System.Drawing.Size(35, 13);
             this.lblServerstatusAusgabe.TabIndex = 6;
@@ -107,7 +108,7 @@
             // lblAnzahlClentsText
             // 
             this.lblAnzahlClentsText.AutoSize = true;
-            this.lblAnzahlClentsText.Location = new System.Drawing.Point(303, 231);
+            this.lblAnzahlClentsText.Location = new System.Drawing.Point(419, 231);
             this.lblAnzahlClentsText.Name = "lblAnzahlClentsText";
             this.lblAnzahlClentsText.Size = new System.Drawing.Size(102, 13);
             this.lblAnzahlClentsText.TabIndex = 7;
@@ -116,7 +117,7 @@
             // lblAnzahlClentsAusgabe
             // 
             this.lblAnzahlClentsAusgabe.AutoSize = true;
-            this.lblAnzahlClentsAusgabe.Location = new System.Drawing.Point(427, 231);
+            this.lblAnzahlClentsAusgabe.Location = new System.Drawing.Point(543, 231);
             this.lblAnzahlClentsAusgabe.Name = "lblAnzahlClentsAusgabe";
             this.lblAnzahlClentsAusgabe.Size = new System.Drawing.Size(13, 13);
             this.lblAnzahlClentsAusgabe.TabIndex = 8;
@@ -125,7 +126,7 @@
             // lblIPAddresse
             // 
             this.lblIPAddresse.AutoSize = true;
-            this.lblIPAddresse.Location = new System.Drawing.Point(300, 19);
+            this.lblIPAddresse.Location = new System.Drawing.Point(416, 19);
             this.lblIPAddresse.Name = "lblIPAddresse";
             this.lblIPAddresse.Size = new System.Drawing.Size(67, 13);
             this.lblIPAddresse.TabIndex = 9;
@@ -135,18 +136,28 @@
             // lblPort
             // 
             this.lblPort.AutoSize = true;
-            this.lblPort.Location = new System.Drawing.Point(427, 19);
+            this.lblPort.Location = new System.Drawing.Point(543, 19);
             this.lblPort.Name = "lblPort";
             this.lblPort.Size = new System.Drawing.Size(29, 13);
             this.lblPort.TabIndex = 10;
             this.lblPort.Text = "Port:";
             this.lblPort.Click += new System.EventHandler(this.lblPort_Click);
             // 
+            // lblVerbundeneClientsText
+            // 
+            this.lblVerbundeneClientsText.AutoSize = true;
+            this.lblVerbundeneClientsText.Location = new System.Drawing.Point(416, 71);
+            this.lblVerbundeneClientsText.Name = "lblVerbundeneClientsText";
+            this.lblVerbundeneClientsText.Size = new System.Drawing.Size(102, 13);
+            this.lblVerbundeneClientsText.TabIndex = 11;
+            this.lblVerbundeneClientsText.Text = "Verbundene Clients:";
+            // 
             // WIN_Projektwoche_Server
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(624, 346);
+            this.ClientSize = new System.Drawing.Size(740, 346);
+            this.Controls.Add(this.lblVerbundeneClientsText);
             this.Controls.Add(this.lblPort);
             this.Controls.Add(this.lblIPAddresse);
             this.Controls.Add(this.lblAnzahlClentsAusgabe);
@@ -158,8 +169,9 @@
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.lboxConnectedClients);
             this.Controls.Add(this.lboxLog);
-            this.MaximumSize = new System.Drawing.Size(640, 385);
-            this.MinimumSize = new System.Drawing.Size(640, 385);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(756, 385);
+            this.MinimumSize = new System.Drawing.Size(756, 385);
             this.Name = "WIN_Projektwoche_Server";
             this.Text = "Server";
             this.Load += new System.EventHandler(this.WIN_Projektwoche_Server_Load);
@@ -181,6 +193,7 @@
         private System.Windows.Forms.Label lblAnzahlClentsAusgabe;
         private System.Windows.Forms.Label lblIPAddresse;
         private System.Windows.Forms.Label lblPort;
+        private System.Windows.Forms.Label lblVerbundeneClientsText;
     }
 }
 

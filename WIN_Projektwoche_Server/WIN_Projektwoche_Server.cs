@@ -67,13 +67,13 @@ namespace WIN_Projektwoche
 
         private void RemoveClient(string client)
         {
-            MethodInvoker tmp = delegate { lboxConnectedClients.Items.Remove(client); lboxLog.Items.Add(String.Format("Ein Client die Verbindung getrennt ({0})", client)); };
+            MethodInvoker tmp = delegate { lboxConnectedClients.Items.Remove(client); lboxLog.Items.Add(String.Format("{0} Ein Client die Verbindung getrennt ({1})",DateTime.Now ,client)); };
             Invoke(tmp);
         }
 
         private void AddClient(string client)
         {
-            MethodInvoker tmp = delegate { lboxConnectedClients.Items.Add(client); lboxLog.Items.Add(String.Format("Ein Client hat sich verbunden ({0})",client)); };
+            MethodInvoker tmp = delegate { lboxConnectedClients.Items.Add(client); lboxLog.Items.Add(String.Format("{0} Ein Client hat sich verbunden ({1})",DateTime.Now,client)); };
             Invoke(tmp);
         }
 
@@ -84,7 +84,7 @@ namespace WIN_Projektwoche
             btnStart.Enabled = false;
             cboxIPAdresse.Enabled = false;
             tboxPort.Enabled = false;
-            lboxLog.Items.Add("Der Server wurde gestartet");
+            lboxLog.Items.Add(string.Format( "{0} Der Server wurde gestartet",DateTime.Now));
             Server.ClientConnected += new AsyncTcpServer.ClientConnectedEventHandler(Connected);
             Server.ClientDisconnected += new AsyncTcpServer.ClientDisconnectedEventHandler(Disconnected);
             Server.PacketReceived += new AsyncTcpServer.PacketReceivedEventHandler(Packet_Recieved);
